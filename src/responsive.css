@@ -1,0 +1,55 @@
+/* ===== PADELFINDER RESPONSIVE ===== */
+
+/* Tablettes et téléphones */
+@media (max-width: 768px) {
+  .page-inner {
+    padding: 12px !important;
+    padding-bottom: 80px !important;
+  }
+  
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .flex-row {
+    flex-direction: column !important;
+  }
+
+  .club-card {
+    flex-direction: column !important;
+  }
+
+  h1 { font-size: 22px !important; }
+  h2 { font-size: 18px !important; }
+
+  input, select, button {
+    font-size: 16px !important;
+  }
+
+  /* Cacher la navbar desktop */
+  .desktop-nav { display: none !important; }
+  
+  /* Afficher la navbar mobile */
+  .mobile-nav { display: flex !important; }
+}
+
+@media (min-width: 769px) {
+  .desktop-nav { display: flex !important; }
+  .mobile-nav { display: none !important; }
+}
+
+/* Petits téléphones */
+@media (max-width: 400px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
